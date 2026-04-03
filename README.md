@@ -1,22 +1,22 @@
-# 🏥 Hospital Management System
+#  Hospital Management System
 
 ## 📌 Project Overview
 This Hospital Management System is a web-based application designed to streamline and automate basic hospital operations. It helps in managing patient details, recording medical issues, and maintaining organized records, improving efficiency and reducing manual work.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📝 Patient Registration: Collect patient details through a simple form  
-- 📋 Record Management: Store patient data including issue, age, and contact details  
-- 🕒 Date & Time Tracking: Automatically records submission date and day  
-- 📄 Data Display: Displays submitted details on a separate page  
-- 💾 Data Storage: Saves records in a text file (can be upgraded to database)  
-- 🔄 Form Reset: Clear input fields instantly  
+-  Patient Registration: Collect patient details through a simple form  
+-  Record Management: Store patient data including issue, age, and contact details  
+-  Date & Time Tracking: Automatically records submission date and day  
+-  Data Display: Displays submitted details on a separate page  
+-  Data Storage: Saves records in a text file (can be upgraded to database)  
+-  Form Reset: Clear input fields instantly  
 
 ---
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 - **Frontend:** HTML5, CSS3  
 - **Backend:** Python (Flask)  
@@ -25,7 +25,7 @@ This Hospital Management System is a web-based application designed to streamlin
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Hospital/
@@ -44,32 +44,32 @@ Hospital/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 ```bash
 git clone https://github.com/Dwarakesh09/Hospital.git
 cd Hospital
 ```
 
-### 2️⃣ Install dependencies
+### 2️ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the application
+### 3️ Run the application
 ```bash
 python app.py
 ```
 
-### 4️⃣ Open in browser
+### 4️ Open in browser
 ```
 http://127.0.0.1:5000/
 ```
 
 ---
 
-## 📊 Usage
+##  Usage
 
 - Fill in patient details using the form  
 - Submit the form to view entered data  
@@ -78,18 +78,18 @@ http://127.0.0.1:5000/
 
 ---
 
-## 📌 Future Enhancements
+##  Future Enhancements
 
-- 🗄 Integrate database (SQLite / MongoDB)  
-- 📊 View all patient records in table format  
-- 🔍 Search and filter patient data  
-- 🗑 Delete or update records  
-- 🌍 Deploy application online  
-- 🔐 Add authentication (admin login system)  
+-  Integrate database (SQLite / MongoDB)  
+-  View all patient records in table format  
+-  Search and filter patient data  
+-  Delete or update records  
+-  Deploy application online  
+-  Add authentication (admin login system)  
 
 ---
 
-## 🤝 Contribution Guidelines
+##  Contribution Guidelines
 
 1. Fork the repository  
 2. Create a new branch:
@@ -108,13 +108,13 @@ http://127.0.0.1:5000/
 
 ---
 
-## 🙋‍♂️ Author
+##  Author
 
 **Dwarakesh Raghu**  
-📧 1234dwarakesh@gmail.com  
+ 1234dwarakesh@gmail.com  
 
 ---
 
-## 📄 License
+##  License
 
 This project is open-source and free to use.
