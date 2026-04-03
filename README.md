@@ -12,8 +12,8 @@ This Hospital Management System is a web-based application designed to streamlin
 - Staff Management: Handle staff details, shifts, and payroll.
 
 ## Technology Stack
-- **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express
+- **Frontend:** HTML, CSS
+- **Backend:** Python
 - **Database:** MongoDB
 - **Hosting:** Heroku / AWS 
 
