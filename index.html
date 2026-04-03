@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Details Form</h1>
+
+    <form action="/submit" method="POST">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="issue">Issue:</label><br>
+        <select id="issue" name="issue" required>
+            <option value="" disabled selected>Select Issue</option>
+            <option value="cold">Cold</option>
+            <option value="fever">Fever</option>
+            <option value="general checkup">General Checkup</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+
+        <button type="button" onclick="window.location.href='/view_submissions'">
+            View Submissions
+        </button>
+
+        <button type="reset">Clear</button>
+
+    </form>
+
+</body>
+</html>
