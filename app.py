@@ -1,10 +1,10 @@
 from datetime import datetime
 from flask import Flask, render_template, request
 import os
+import csv
 
 app = Flask(__name__)
 
-# ✅ Home route (IMPORTANT)
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -19,24 +19,19 @@ def details():
         phone = request.form['phone']
         gender = request.form.get('gender') or 'Not Provided'
 
-        # ✅ Date & Day
         date = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         day = datetime.now().strftime("%A")
 
-        submitted_data = {
-            'name': name,
-            'age': age,
-            'issue': issue,
-            'email': email,
-            'phone': phone,
-            'gender': gender,
-            'date': date,
-            'day': day
-        }
+        # ✅ CSV Saving
+        file_exists = os.path.isfile('submitted_data.csv')
 
-        # ✅ Save data
-        with open('submitted_data.txt', 'a') as f:
-            f.write(str(submitted_data) + '\n')
+        with open('submitted_data.csv', 'a', newline='') as f:
+            writer = csv.writer(f)
+
+            if not file_exists:
+                writer.writerow(['Name', 'Age', 'Issue', 'Email', 'Phone', 'Gender', 'Date', 'Day'])
+
+            writer.writerow([name, age, issue, email, phone, gender, date, day])
 
         return render_template(
             'details.html',
@@ -52,7 +47,5 @@ def details():
     else:
         return "Name is required!", 400
 
-
-# ✅ Run app (IMPORTANT)
 if __name__ == '__main__':
     app.run(debug=True)
